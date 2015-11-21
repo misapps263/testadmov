@@ -1,0 +1,32 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "AndroidManifest.xml": {
+            "/manifest/application": {
+                "<meta-data android:name=\"com.google.android.gms.version\" android:value=\"@integer/google_play_services_version\" />": 2,
+                "<activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:name=\"com.google.android.gms.ads.AdActivity\" />": 1
+            },
+            "/*": {
+                "<uses-permission android:name=\"android.permission.INTERNET\" />": 1,
+                "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />": 1
+            }
+        },
+        "res/xml/config.xml": {
+            "/*": {
+                "<feature name=\"AdMob\"><param name=\"android-package\" value=\"com.rjfun.cordova.plugin.AdMob\" /></feature>": 1
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.google.playservices": {
+            "PACKAGE_NAME": "com.rjfun.testadmob"
+        },
+        "com.rjfun.cordova.plugin.admob": {
+            "PACKAGE_NAME": "com.rjfun.testadmob"
+        }
+    },
+    "dependent_plugins": {}
+}
